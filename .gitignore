@@ -1,0 +1,4 @@
+# ignore the file end with ~
+*~
+# ignore the file end with .swp
+*.swp
