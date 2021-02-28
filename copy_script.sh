@@ -1,5 +1,6 @@
+# run this script in the ~ dir
 # copy and make the symlink to the dotfiles
-for name in .bashrc .bash_profile .vimrc; do
-	mv ~/$name $name;
-	ln -s name ~/$name
+for name in .vimrc .bash_prompt .bashrc .bash_profile; do
+	rm $(pwd)/$name
+	ln -s $(pwd)/myDotfiles/$name $(pwd)/$name;
 	done
