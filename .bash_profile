@@ -21,7 +21,7 @@ if [[ "$(hostname)" == "ahz-server" ]]; then {
         # <<< conda initialize <<<
 }; fi
 
-if [[ "$(hostname)" == "ahz-server" ]]; then {
+if [[ "$(hostname)" == "yangzizhangdeMacBook-Pro.local" ]]; then {
         # <<< conda initialize <<<
          __conda_setup="$('/Users/yangzizhang/opt/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
         if [ $? -eq 0 ]; then
