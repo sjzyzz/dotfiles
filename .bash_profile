@@ -36,3 +36,7 @@ if [[ "$(hostname)" == "yangzizhangdeMacBook-Pro.local" ]]; then {
         unset __conda_setup
         # <<< conda initialize <<<
 }; fi
+export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
+eval "$(rbenv init -)"
+export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
+export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
