@@ -57,7 +57,19 @@ if [[ "$(hostname)" == "sjzyzz-HP-Z820-Workstation" ]]; then {
         unset __conda_setup
         # <<< conda initialize <<<
 }; fi
-export LS_OPTIONS='--color=auto'
-eval "$(dircolors -b)"
+if [[ "$(hostname)" == "yangzizhangdeMacBook-Pro.local" ]]; then {
+	echo "in mbp branch"	
+	export LS_OPTIONS='-G'
+	export CLICOLOR=1
+	export LSCOLORS='Gxdxcxdxbxegedabagacad'
+}
+else
+	export LS_OPTIONS='--color=auto'
+	eval "$(dircolors -b)"
+	LS_COLORS='di=01;94:'
+	export LS_COLORS
+fi
+# export LS_OPTIONS='--color=auto'
+
 alias ls='ls $LS_OPTIONS'
-LS_COLORS=$LS_COLORS:'di=1;94:' ; export LS_COLORS
+
